@@ -8,7 +8,7 @@ public class AppController {
 
     @GetMapping
     public String home() {
-        return "Docker 컨테이너 기반 CI/CD 서버 배포하기";
+        return "자동 배포화 성공 테스트입니다.";
     }
 
 }
