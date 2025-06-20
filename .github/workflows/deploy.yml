@@ -51,7 +51,7 @@ jobs:
       - name: SSH(원격 접속)로 EC2에 접속하기
         uses: appleboy/ssh-action@v1.0.3
         with:
-          host: ${{ secrets.HOST }} # IP 주소를 말함
+          host: ${{ secrets.EC2_HOST }} # IP 주소를 말함
           username: ${{ secrets.EC2_USERNAME }} # EC2를 연결할 때 사용자 이름
           key: ${{ secrets.EC2_PRIVATE_KEY }} # EC2에 접근할 때 사용하는 키 페어
           script_stop: true
